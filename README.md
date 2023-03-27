@@ -1,36 +1,41 @@
 # Challenge 5: Workday-Scheduler
 
 ## Description:
-* bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+* Create a simple calendar application that allows a user to save events for each hour of the day by modifying/refractoring existing code.
 
-* bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+* The app runs in the browser and features dynamically updated HTML and CSS powered by jQuery.
+
+* The Day.js library is used to work on the date and time.
 
 ___
 
 ## User Story:
-* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+* AS AN employee with a busy schedule
+* I WANT to add important events to a daily planner
+* SO THAT I can manage my time effectively
 
 ___
 
 ## Acceptance Criteria:
-<u>GIVEN</u> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa ...
+<u>GIVEN</u> I am using a daily planner to create a schedule ...
 
-* <i>WHEN </i>RRRRRRRRRRRRRRRRRRRRRRRR,
-<br><b>THEN </b>TTTTTTTTTTTTTTTTTTTTTTTTTTTT.
+* <i>WHEN </i> I open the planner,
+<br><b>THEN </b> the current day is displayed at the top of the calendar.
 
-* <i>WHEN </i>RRRRRRRRRRRRRRRRRRRRRRRR,
-<br><b>THEN </b>TTTTTTTTTTTTTTTTTTTTTTTTTTTT.
+* <i>WHEN </i> I scroll down,
+<br><b>THEN </b> I am presented with time-blocks for standard business hours.
 
-* <i>WHEN </i>RRRRRRRRRRRRRRRRRRRRRRRR,
-<br><b>THEN </b>TTTTTTTTTTTTTTTTTTTTTTTTTTTT.
+* <i>WHEN </i> I view the time-blocks for that day,
+<br><b>THEN </b> each time-block is color coded to indicate whether it is in the past, present, or future.
 
-* <i>WHEN </i>RRRRRRRRRRRRRRRRRRRRRRRR,
-<br><b>THEN </b>TTTTTTTTTTTTTTTTTTTTTTTTTTTT.
+* <i>WHEN </i> I click into a time-block,
+<br><b>THEN </b> I can enter an event.
 
-* <i>WHEN </i>RRRRRRRRRRRRRRRRRRRRRRRR,
-<br><b>THEN </b>TTTTTTTTTTTTTTTTTTTTTTTTTTTT.
+* <i>WHEN </i> I click the save button for that time-block,
+<br><b>THEN </b> the text for that event is saved in local storage.
+
+* <i>WHEN </i> I refresh the page,
+<br><b>THEN </b> the saved events persist.
 
 ___
 
@@ -53,7 +58,7 @@ ___
 
 ## Student's Submitted Work:
 
-* URL of the <u>deployed application</u>: [xxxxxxxxxxxxxxxxxx](add link to live webpage)
+* URL of the <u>deployed application</u>: [Professional Work-Day Scheduler](https://clochstampfor60.github.io/C5-Workday-Scheduler/)
 
 
 * URL of the application's <u>GitHub Repository</u>: [CLocky60](https://github.com/CLochstampfor60/C5-Workday-Scheduler)
