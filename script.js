@@ -1,6 +1,8 @@
 
 	// --------- Display current day and calendar date to html and browser ----------------
-var currentDay = $('#current-day').text(dayjs().format('dddd, MMMM DD, YYYY'));
+var currentDay = $('#current-day').text(dayjs().format('dddd, MMMM DD, YYYY [at] h:mm A'));
+console.log(currentDay);
+// var currentTime = $('#current-time').text(dayjs().format('h:mm:ss A'));
 
 // -------------- Web Application opens to the user --------------
 // By 'triggering' when the full document/browser is opened by, and fully rendered to the user,
@@ -60,4 +62,6 @@ $(document).ready(function () {
 		$("#hour-18 .description").val(localStorage.getItem(".hour-18"));
 
     watchClock();
+
+		setInterval(watchClock, 15000);
 })
