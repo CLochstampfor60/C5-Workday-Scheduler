@@ -7,7 +7,12 @@ console.log(currentDay);
 // -------------- Web Application opens to the user --------------
 // By 'triggering' when the full document/browser is opened by, and fully rendered to the user,
 	// 		we've wrapped all the code together in an organized manner that operates without error.
+function handleDocumentLoading(event) {
+	event.preventDefault();
+}
+
 $(document).ready(function () {
+	
 	// saveBtn click listener to initiate the current function and the below methods.
 	$(".saveBtn").on("click", function () {
 			// Obtain the values of the description in JQuery.
