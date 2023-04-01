@@ -24,16 +24,15 @@ $(document).ready(function () {
 
 			// Method loops through each and every time-block.
 			$(".time-block").each(function () {
-					var timeBlockEl = parseInt($(this).attr("id").split("hour")[1]);
-
+					var timeBlockEl = parseInt($(this).attr("id").split("-")[1]);
 					// Conditional statements to check, compare and contrast with the current hour, and
 					// 			finally add the appropriate background settings (i.e., past, present, future in CSS).
-					if (timeBlockEl > currentHourEl) {
+					if (currentHourEl > timeBlockEl) {
 							$(this).removeClass("future");
 							$(this).removeClass("present");
 							$(this).addClass("past");
 					}
-					else if (timeBlockEl === currentHourEl) {
+					else if (currentHourEl === timeBlockEl) {
 							$(this).removeClass("past");
 							$(this).removeClass("future");
 							$(this).addClass("present");
@@ -48,20 +47,20 @@ $(document).ready(function () {
 
 	// Obtain the user input that was saved to the localStorage from the localStorage (if any), using the id attribute of each time-block.
 	// 			We also set the values to the corresponding textarea elements.
-		$("#hour-7 .description").val(localStorage.getItem(".hour-7"));
-		$("#hour-8 .description").val(localStorage.getItem(".hour-8"));
-    $("#hour-9 .description").val(localStorage.getItem(".hour-9"));
-    $("#hour-10 .description").val(localStorage.getItem(".hour-10"));
-    $("#hour-11 .description").val(localStorage.getItem(".hour-11"));
-    $("#hour-12 .description").val(localStorage.getItem(".hour-12"));
-    $("#hour-13 .description").val(localStorage.getItem(".hour-13"));
-    $("#hour-14 .description").val(localStorage.getItem(".hour-14"));
-    $("#hour-15 .description").val(localStorage.getItem(".hour-15"));
-    $("#hour-16 .description").val(localStorage.getItem(".hour-16"));
-    $("#hour-17 .description").val(localStorage.getItem(".hour-17"));
-		$("#hour-18 .description").val(localStorage.getItem(".hour-18"));
+		$("#hour-7 .description").val(localStorage.getItem("hour-7"));
+		$("#hour-8 .description").val(localStorage.getItem("hour-8"));
+    $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+    $("#hour-10 .description").val(localStorage.getItem("hour-10"));
+    $("#hour-11 .description").val(localStorage.getItem("hour-11"));
+    $("#hour-12 .description").val(localStorage.getItem("hour-12"));
+    $("#hour-13 .description").val(localStorage.getItem("hour-13"));
+    $("#hour-14 .description").val(localStorage.getItem("hour-14"));
+    $("#hour-15 .description").val(localStorage.getItem("hour-15"));
+    $("#hour-16 .description").val(localStorage.getItem("hour-16"));
+    $("#hour-17 .description").val(localStorage.getItem("hour-17"));
+		$("#hour-18 .description").val(localStorage.getItem("hour-18"));
 
     watchClock();
 
-		setInterval(watchClock, 15000);
+		// setInterval(watchClock, 15000);
 })
